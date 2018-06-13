@@ -92,13 +92,11 @@ posts created by users of the application. It should:
     - a user_id that **references** a user by id (integer)
 
 #### Step 3: ./queries/03_insert_user.sql
-This script is responsible for inserting some users into the database. It
+This script is responsible for inserting an admin user into the database. It
 should:
 - insert user with:
     - a username of 'admin'
     - a bio of 'I am just a lonely administrator.'
-
-Hint: You can insert both users with one INSERT query.
 
 #### Step 4: ./queries/04_insert_posts.sql
 This script is responsible for inserting some posts into the database. It
