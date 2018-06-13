@@ -64,7 +64,7 @@ That said, the steps are meant to run sequentially (eg, all files in
 `./queries` should run one after the other), so you'll instead want to test
 your queries with the following command: 
 ```shell
-foo@bar:~/social-media-queries $ psql -d social-media < ./queries/00_clear_database.sql
+foo@bar:~/social-media-queries $ psql -d social-media < ./queries/*
 ```
 
 Let's begin!
