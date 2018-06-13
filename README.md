@@ -64,10 +64,9 @@ That said, the steps are meant to run sequentially (eg, all files in
 `./queries` should run one after the other), so you'll instead want to test
 your queries with the following command: 
 ```shell
-foo@bar:~/social-media-queries $ psql -d social-media < ./queries/*
+foo@bar:~/social-media-queries $ for query in $(ls queries); do psql social-media < ./queries/$query; done
 ```
-
-Let's begin!
+Yes, that's a for loop -- in BASH :-). Let's begin!
 
 #### Step 0: ./queries/00_clear_database.sql
 This script is responsible for clearing information from the database. It
