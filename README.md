@@ -110,7 +110,7 @@ should:
     - a user_id that matches the admin user's id
 
 ### Part 2 (6 points)
-Start by initializing a node project with `yarn` and installing the following
+Start by initializing a project and installing the following
 dependencies:
 - `pg`: We'll be using this to execute SQL queries
 - `express`: We'll be using this to create an HTTP server that executes SQL
